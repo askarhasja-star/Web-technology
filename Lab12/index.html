@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Colors</title>
+</head>
+<body>
+    <h2>Color selection</h2>
+
+    <form action="/cgi-bin/color.pl" method="post">
+        <label>Enter a color code (for example #ff0000):</label><br>
+        <input type="text" name="color_code"><br><br>
+
+        <label>Select color name:</label><br>
+        <select name="color_name">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="black">Black</option>
+        </select><br><br>
+
+        <input type="submit" value="Show">
+    </form>
+</body>
+</html>
